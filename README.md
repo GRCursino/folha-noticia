@@ -1,2 +1,2 @@
 # folha-noticia
-Trabalho da matéria de laboratório de engenharia de software
+Repositório da matéria de laboratório de engenharia de software.
