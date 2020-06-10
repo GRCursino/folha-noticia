@@ -1,0 +1,22 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+
+#ignored folders
+
+build/
+.gradle
+gradle/
+.nb-gradle/
+.settings/
+.project
+
+
+#ignored extensions
+.exe
+.bin
+/bin
+.classpath

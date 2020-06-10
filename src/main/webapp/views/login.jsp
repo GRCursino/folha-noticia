@@ -17,7 +17,20 @@ and open the template in the editor.
         </script>
     </head>
     <body>
-       <h1>Home</h1>
-       <a href="login">Fazer Login</a>
+       <H1>Tela de Login</H1>
+
+        <label for="campoEmail">Email</label>
+        <input 
+            placeholder="Email"
+            name="campoEmail"
+        >
+        <label for="campoSenha">Senha</label>
+        <input 
+            placeholder="Senha"
+            name="campoSenha"
+            type="password"
+        >
+
+       <a href="/folha-noticia/calc">Ir para Calculadora</a>
     </body>
 </html>
