@@ -5,32 +5,29 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Meu index</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="meucss.css"/>
-        <script>
-            function somar(numero) {
-                alert(numero)
-            }
-        </script>
-    </head>
-    <body>
-       <H1>Tela de Login</H1>
+
+<head>
+    <title>Meu index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meucss.css" />
+
+</head>
+
+<body>
+    <H1>Tela de Login</H1>
+    <form action="login" method="post">
+
 
         <label for="campoEmail">Email</label>
-        <input 
-            placeholder="Email"
-            name="campoEmail"
-        >
+        <input placeholder="Email" name="campoEmail">
         <label for="campoSenha">Senha</label>
-        <input 
-            placeholder="Senha"
-            name="campoSenha"
-            type="password"
-        >
+        <input placeholder="Senha" name="campoSenha" type="password">
+        <button type="submit">
+            Logar
+        </button>
+    </form>
+   
+</body>
 
-       <a href="/folha-noticia/calc">Ir para Calculadora</a>
-    </body>
 </html>
