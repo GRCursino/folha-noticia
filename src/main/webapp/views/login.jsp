@@ -10,24 +10,27 @@ and open the template in the editor.
     <title>Meu index</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="meucss.css" />
+    <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
-    <H1>Tela de Login</H1>
-    <form action="login" method="post">
+    <div class="container4">
+        <div class="elemento2">
+            <H1>Tela de Login</H1>
+            <form action="login" method="post">
 
 
-        <label for="campoEmail">Email</label>
-        <input placeholder="Email" name="campoEmail">
-        <label for="campoSenha">Senha</label>
-        <input placeholder="Senha" name="campoSenha" type="password">
-        <button type="submit">
-            Logar
-        </button>
-    </form>
-   
+                <label for="campoEmail">Email</label>
+                <input placeholder="Email" name="campoEmail">
+                <label for="campoSenha">Senha</label>
+                <input placeholder="Senha" name="campoSenha" type="password">
+                <button type="submit">
+                    Logar
+                </button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

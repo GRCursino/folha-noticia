@@ -9,6 +9,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 
 
 @Entity
@@ -25,6 +29,17 @@ public class Resultado {
     @Column
     private int id_user;
 
+    @Column
+    private String data;
+
+    public String getData() {
+        return this.data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
     public int getId_user() {
         return this.id_user;
     }
@@ -32,8 +47,6 @@ public class Resultado {
     public void setId_user(int id_user) {
         this.id_user = id_user;
     }
-    
-   
 
     public String getOperacao() {
         return this.operacao;
@@ -59,14 +72,11 @@ public class Resultado {
         this.id = id;
     }
 
-    public Resultado(String operacao, String resultado, int id, int id_user) {
-        this.operacao = operacao;
-        this.resultado = resultado;
-        this.id = id;
-        this.id_user = id_user;
-    }
-
     public Resultado() {
+        Calendar c = Calendar.getInstance();
+        Date data = c.getTime();
+        DateFormat f = DateFormat.getDateInstance(DateFormat.FULL);
+        this.data = f.format(data);
     }
 
 

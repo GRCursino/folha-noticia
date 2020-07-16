@@ -28,6 +28,7 @@ public class ResultadoController extends HttpServlet {
 				JSONObject json = new JSONObject();
 				json.put("operacao", resultado.getOperacao());
 				json.put("resultado", resultado.getResultado());
+				json.put("data", resultado.getData());
 				array.put(json);
 			}
 			res.setContentType("application/json");
