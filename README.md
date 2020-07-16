@@ -38,3 +38,10 @@ VALUES
 ## 3º Passo
 
 Subir a aplicação na pasta do projeto, através do terminal executar o comando "gradle apprun" para a aplicação ficar disponível no endereço - "localhost:8080/calculadora"
+
+## Estrutura
+
+A estrutura de pastas do projeto está em padrão MVC, onde o Model é representado pelo "usuario" e "resultado" juntamente com "usuarioDAO" e "resultadoDAO" integrados
+com o Hibernate para criação das tabelas no banco e execução das operações referentes ao banco de dados.
+Views estão presentes as telas de login e calculadora (calc.jsp, login.jsp) e o index.
+Controller estão presentes "calc.java" responsável pelos cálculos executados na aplicação, "login.java" responsável pela validação do usuário e "resultado.controller" responsável pela geração de um array de JSON retornando do banco as operações salvas.
